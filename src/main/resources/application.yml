@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    platform: postgresql
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: root
+    driverClassName: org.postgresql.Driver
+  jpa:
+    hibernate.ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            use_contextual_creation: true
